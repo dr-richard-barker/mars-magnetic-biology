@@ -1,0 +1,32 @@
+# Data
+data/raw/
+*.h5
+*.nc
+*.dat
+*.tab
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.pytest_cache/
+
+# LaTeX Intermediate Files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

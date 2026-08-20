@@ -1,0 +1,72 @@
+cff-version: 1.2.0
+title: >-
+  Martian Crustal Magnetic Field Heterogeneity and Implications
+  for Biological Systems at Candidate Landing Sites
+message: >-
+  If you use this software or data, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - family-names: Barker
+    given-names: Richard
+    affiliation: Purdue University
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Sanchez
+    given-names: Adriana Kaley
+    affiliation: Purdue University
+  - family-names: Dagar
+    given-names: Manisha
+    affiliation: Purdue University
+  - family-names: Boland
+    given-names: Katrina
+    affiliation: Purdue University
+  - family-names: Borlina
+    given-names: Cauê Sciascia
+    affiliation: Purdue University
+  - family-names: Porterfield
+    given-names: D. Marshall
+    affiliation: Purdue University
+repository-code: "https://github.com/dr-richard-barker/mars-magnetic-biology"
+url: "https://dr-richard-barker.github.io/mars-magnetic-biology"
+abstract: >-
+  Analysis pipeline, publication figures, and interactive 3D
+  visualization for Martian crustal magnetic field data from MGS
+  and MAVEN missions, with a systematic review of hypomagnetic
+  field effects on terrestrial biology and biological risk assessment
+  for future Mars surface exploration and habitats.
+keywords:
+  - Mars magnetic field
+  - hypomagnetic field
+  - astrobiology
+  - space biology
+  - landing site selection
+  - Mars Global Surveyor
+  - MAVEN
+  - magnetobiology
+  - FAIR data
+license: CC-BY-4.0
+version: 1.0.0
+date-released: "2026-08-20"
+doi: "10.5281/zenodo.XXXXXXX"
+references:
+  - type: article
+    title: A New Model of the Crustal Magnetic Field of Mars Using MAVEN and Mars Global Surveyor Data
+    authors:
+      - family-names: Langlais
+        given-names: B.
+      - family-names: Thébault
+        given-names: E.
+      - family-names: Sanchez-Cano
+        given-names: B.
+      - family-names: Connerney
+        given-names: J. E. P.
+      - family-names: Mittelholz
+        given-names: A.
+      - family-names: Johnson
+        given-names: C. L.
+    journal: Journal of Geophysical Research: Planets
+    volume: 124
+    issue: 6
+    pages: 1542-1569
+    year: 2019
+    doi: "10.1029/2019JE005979"

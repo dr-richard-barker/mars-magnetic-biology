@@ -1,0 +1,48 @@
+\documentclass{npj-article}
+
+\title{Martian Crustal Magnetic Field Heterogeneity and Implications for Biological Systems at Candidate Landing Sites}
+
+\author{%
+  \textbf{Richard Barker}\textsuperscript{1,*},
+  \textbf{Adriana Kaley Sanchez}\textsuperscript{1},
+  \textbf{Manisha Dagar}\textsuperscript{1},
+  \textbf{Katrina Boland}\textsuperscript{1},
+  \textbf{Cau\^{e} Sciascia Borlina}\textsuperscript{2},
+  \textbf{D.~Marshall Porterfield}\textsuperscript{1}
+  \vspace{2mm}\\
+  \textsuperscript{1}\footnotesize Department of Agricultural and Biological Engineering, Purdue University, West Lafayette, IN 47907, USA\\
+  \textsuperscript{2}\footnotesize Department of Earth, Atmospheric, and Planetary Sciences, Purdue University, West Lafayette, IN 47907, USA\\
+  \textsuperscript{*}\footnotesize Corresponding author: \href{mailto:rbarker2@purdue.edu}{rbarker2@purdue.edu}
+}
+
+\input{sections/abstract.tex}
+
+\begin{document}
+\makefrontmatter
+
+\input{sections/introduction.tex}
+\input{sections/results.tex}
+\input{sections/discussion.tex}
+\input{sections/methods.tex}
+\input{sections/conclusion.tex}
+
+\section*{Data Availability}
+The Martian crustal magnetic field datasets analyzed in this study are available through the NASA Planetary Data System (PDS) Geosciences and Planetary Plasma Interactions (PPI) Nodes, and derived from the Langlais et al. (2019) spherical harmonic model (\href{https://doi.org/10.1029/2019JE005979}{DOI: 10.1029/2019JE005979}). Processed landing site tables, systematic review datasets, and interactive 3D visualization assets are archived in Zenodo (\href{https://doi.org/10.5281/zenodo.XXXXXXX}{DOI: 10.5281/zenodo.XXXXXXX}) and hosted on GitHub (\url{https://github.com/dr-richard-barker/mars-magnetic-biology}).
+
+\section*{Code Availability}
+All Python analysis scripts, figure generation pipelines, and Three.js 3D globe assets are open source under the MIT license at \url{https://github.com/dr-richard-barker/mars-magnetic-biology}.
+
+\section*{Acknowledgements}
+The authors acknowledge the science and instrument teams of the Mars Global Surveyor (MGS) MAG/ER, MAVEN Magnetometer, and InSight InSight Fluxgate (IFG) Magnetometer for collecting and archiving planetary magnetic field observations. This work was supported by space life sciences and bioengineering research initiatives at Purdue University.
+
+\section*{Author Contributions}
+R.B. and D.M.P. conceived the research and experimental framework. R.B., A.K.S., M.D., and K.B. developed the data processing pipeline, conducted the magnetobiology literature review, and prepared the figures and tables. C.S.B. contributed planetary magnetism modeling, Martian paleomagnetism expertise, and spherical harmonic dataset interpretation. R.B., C.S.B., and D.M.P. drafted the manuscript and formulated the biological risk matrix. All authors reviewed, edited, and approved the final manuscript.
+
+\section*{Competing Interests}
+The authors declare no competing financial or non-financial interests.
+
+\renewcommand{\bibnumfmt}[1]{#1.}
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

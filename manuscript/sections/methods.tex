@@ -1,0 +1,24 @@
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Martian Crustal Magnetic Field Datasets}
+The primary global magnetic field model utilized in this investigation is the continuous spherical harmonic model developed by \citet{Langlais2019} (DOI: \href{https://doi.org/10.1029/2019JE005979}{10.1029/2019JE005979}). This model combines vector magnetic field measurements from the Mars Global Surveyor (MGS) Magnetometer/Electron Reflectometer (MAG/ER) during its circular mapping orbit ($\sim\SI{400}{\kilo\meter}$ altitude) and low-altitude elliptical periapsis passes ($\sim\SI{130}{\kilo\meter}$) with nightside orbital observations from the Mars Atmosphere and Volatile EvolutioN (MAVEN) Magnetometer. The spherical harmonic expansion provides full global coverage across $\SI{90}{\degree}\text{S}$ to $\SI{90}{\degree}\text{N}$ latitude and $\SI{0}{\degree}$ to $\SI{360}{\degree}\text{E}$ longitude.
+
+The total magnetic field magnitude ($|\mathbf{B}|$) was computed from the three orthogonal spatial components:
+\begin{equation}
+|\mathbf{B}| = \sqrt{B_r^2 + B_\theta^2 + B_\phi^2}
+\end{equation}
+where $B_r$ is the radial component (positive upward), $B_\theta$ is the colatitudinal component (positive southward), and $B_\phi$ is the azimuthal component (positive eastward). Ground-level surface magnetic field intensities ($|\mathbf{B}_{\text{surf}}|$) were estimated by upward-continuation scaling validated against direct in situ surface magnetometer observations from the NASA InSight fluxgate magnetometer \citep{Johnson2020}.
+
+\subsection{Landing Site Extraction and Bilinear Interpolation}
+A geospatial database of 13 primary Martian landing locations was compiled, including historical and active rover sites (Perseverance, Curiosity, Spirit, Opportunity, Zhurong, Viking 1/2, Phoenix, InSight, ExoMars Oxia Planum) and candidate human exploration zones (Arcadia Planitia, Deuteronilus Mensae, Terra Sirenum). Local vector magnetic field components were extracted via 2D bilinear interpolation across the gridded planetary dataset:
+\begin{equation}
+f(\lambda, \phi) \approx \sum_{i=1}^2 \sum_{j=1}^2 w_{ij} f(\lambda_i, \phi_j)
+\end{equation}
+where $w_{ij}$ represent inverse distance geographic weighting factors.
+
+\subsection{Systematic Review of Hypomagnetic Literature}
+A systematic literature review was conducted across PubMed, Web of Science, and NASA Technical Reports Server (2000--2026). Search queries paired ``hypomagnetic field'', ``near-null magnetic field'', and ``zero magnetic field'' with terms including ``Arabidopsis'', ``auxin'', ``cryptochrome'', ``reactive oxygen species'', ``microbiome'', ``osteoclast'', and ``DNA repair''. Studies were filtered to retain rigorous controlled experiments utilizing Mu-metal or active Helmholtz compensation systems achieving field attenuation below \SI{5}{\micro\tesla}.
+
+\subsection{Software and Open Science Availability}
+Data processing pipelines and geospatial calculations were implemented in Python using \texttt{numpy}, \texttt{pandas}, and \texttt{scipy}. Publication figures were rendered using \texttt{matplotlib} and \texttt{seaborn}. WebGL assets and interactive 3D models were constructed with Three.js. The entire pipeline, dataset, and manuscript source files are archived under DOI: \href{https://doi.org/10.5281/zenodo.XXXXXXX}{10.5281/zenodo.XXXXXXX} and hosted on GitHub (\url{https://github.com/dr-richard-barker/mars-magnetic-biology}).

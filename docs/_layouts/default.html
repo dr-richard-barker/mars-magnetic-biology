@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="site-branding">
+                <a href="{{ site.baseurl }}/" class="site-title">
+                    <span class="mars-icon">🔴</span> {{ site.title }}
+                </a>
+                <span class="site-tagline">FAIR Astrobiology & Planetary Magnetism</span>
+            </div>
+            <nav class="site-nav">
+                {% for item in site.navigation %}
+                    {% if item.url contains 'http' %}
+                        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" class="nav-link external">
+                            <i class="fab fa-github"></i> {{ item.title }}
+                        </a>
+                    {% else %}
+                        <a href="{{ site.baseurl }}{{ item.url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">
+                            {{ item.title }}
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="content-container">
+            {{ content }}
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Mars Magnetic Biology</h4>
+                <p>A FAIR-compliant analysis pipeline and biological risk assessment of Martian crustal magnetic fields.</p>
+                <p>Target Journal: <em>npj Microgravity</em> (Nature Publishing Group)</p>
+            </div>
+            <div class="footer-col">
+                <h4>Authors</h4>
+                <p>Richard Barker, Adriana Kaley Sanchez, Manisha Dagar, Katrina Boland, Cauê Sciascia Borlina, D. Marshall Porterfield</p>
+                <p><strong>Purdue University</strong>, West Lafayette, IN, USA</p>
+            </div>
+            <div class="footer-col">
+                <h4>Open Science</h4>
+                <p><a href="https://doi.org/10.5281/zenodo.XXXXXXX"><i class="fas fa-database"></i> Zenodo Deposit</a></p>
+                <p><a href="https://github.com/dr-richard-barker/mars-magnetic-biology"><i class="fab fa-github"></i> GitHub Source</a></p>
+                <p>Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> & MIT</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

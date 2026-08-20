@@ -1,0 +1,69 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Global Spatial Structure of the Martian Crustal Magnetic Field}
+The Martian crustal magnetic field exhibits an unprecedented degree of planetary-scale spatial heterogeneity and hemispheric asymmetry (Figure~\ref{fig:mars_global_mag_map}). At the standard mapping altitude of \SI{400}{\kilo\meter}, the global mean magnetic field magnitude is $|\mathbf{B}| = \SI{15.05}{\nano\tesla}$ (median = \SI{1.51}{\nano\tesla}), with localized peaks exceeding \SI{360}{\nano\tesla}. As illustrated in the vector decomposition triptych (Figure~\ref{fig:mars_vector_components}), the crustal magnetic field is organized into alternating, east-west trending multipolar and dipolar magnetic lineations extending across thousands of kilometers in the southern cratered highlands ($\SI{150}{\degree}\text{E}$ to $\SI{240}{\degree}\text{E}$, $\SI{30}{\degree}\text{S}$ to $\SI{75}{\degree}\text{S}$, encompassing Terra Cimmeria and Terra Sirenum).
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{../figures/fig1_mars_global_mag_map.pdf}
+\caption{\textbf{Global distribution of the Martian crustal magnetic field magnitude.} Total field intensity $|\mathbf{B}|$ at \SI{400}{\kilo\meter} altitude derived from the Langlais et al. (2019) spherical harmonic model based on MAVEN and Mars Global Surveyor (MGS) vector magnetometer observations \citep{Langlais2019}. Note the pronounced crustal dichotomy between the demagnetized northern lowlands and the intensely magnetized southern highlands.}
+\label{fig:mars_global_mag_map}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{../figures/fig2_mars_vector_components.pdf}
+\caption{\textbf{Vector components of the Martian crustal magnetic field at \SI{400}{\kilo\meter} altitude.} Top: Radial component $B_r$ (vertical). Middle: Colatitudinal component $B_\theta$ (southward). Bottom: Azimuthal component $B_\phi$ (eastward) in nanoteslas (nT), demonstrating coherent crustal magnetic lineations.}
+\label{fig:mars_vector_components}
+\end{figure*}
+
+In stark contrast to the southern highlands, the northern lowlands (Vastitas Borealis, Utopia Planitia, Arcadia Planitia, Acidalia) and giant impact basins (Hellas, Argyre, Isidis) display near-complete demagnetization ($|\mathbf{B}_{\text{400km}}| < \SI{2.0}{\nano\tesla}$, surface $|\mathbf{B}| < \SI{20}{\nano\tesla}$). This dichotomy creates two profoundly distinct magnetic worlds on Mars: a southern highland regime populated by mini-magnetospheres, and a northern lowland regime characterized by near-null hypomagnetic field conditions.
+
+\subsection{Landing Site Characterization and Magnetic Classification}
+We extracted the crustal magnetic field components across 13 historical, contemporary, and proposed human landing sites (Figure~\ref{fig:mars_landing_sites_overlay}, Table~\ref{tab:mars_landing_sites}).
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{../figures/fig3_mars_landing_sites_overlay.pdf}
+\caption{\textbf{Distribution of Martian landing sites and candidate exploration habitats across crustal magnetic regimes.} Markers denote NASA surface assets (Perseverance, Curiosity, InSight, Spirit, Opportunity, Viking 1/2, Phoenix), international missions (Zhurong, ExoMars), and proposed candidate human landing sites in Arcadia Planitia, Deuteronilus Mensae, and Terra Sirenum.}
+\label{fig:mars_landing_sites_overlay}
+\end{figure*}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../figures/fig4_mars_sites_comparison.pdf}
+\caption{\textbf{Comparative estimated ground-level surface magnetic field intensities across Martian landing sites.} Bars denote estimated surface field intensity $|B_{\text{surf}}|$, highlighting the vast disparity between northern lowland habitat candidate sites ($< \SI{20}{\nano\tesla}$) and southern anomaly outposts ($> \SI{1500}{\nano\tesla}$).}
+\label{fig:mars_sites_comparison}
+\end{figure}
+
+\input{../tables/table1_mars_landing_sites.tex}
+
+\subsubsection{Northern Lowlands and Human Candidate Habitat Sites}
+Candidate landing sites prioritized for human exploration based on shallow subsurface glacial ice availability—specifically Arcadia Planitia ($\SI{39.30}{\degree}\text{N}$, $\SI{189.70}{\degree}\text{E}$) and Deuteronilus Mensae ($\SI{39.10}{\degree}\text{N}$, $\SI{23.20}{\degree}\text{E}$)—reside within extreme low/null-field environments ($|\mathbf{B}_{\text{400km}}| \approx 0.3\text{--}\SI{0.7}{\nano\tesla}$, surface $|\mathbf{B}| < \SI{10}{\nano\tesla}$). Similarly, contemporary rover landing sites in Jezero Crater (NASA Perseverance; surface $|\mathbf{B}| \approx \SI{9}{\nano\tesla}$), Utopia Planitia (CNSA Zhurong, Viking 2; surface $|\mathbf{B}| \approx \SI{12}{\nano\tesla}$), and Oxia Planum (ESA Rosalind Franklin; surface $|\mathbf{B}| \approx \SI{8}{\nano\tesla}$) are situated in severely hypomagnetic regimes ($>2,500\times$ to $>5,000\times$ lower than Earth's GMF).
+
+\subsubsection{InSight Surface Ground Truth and Southern Anomaly Outposts}
+NASA's InSight lander in Elysium Planitia ($\SI{4.50}{\degree}\text{N}$, $\SI{135.62}{\degree}\text{E}$) provided direct ground-truth surface magnetometry, recording an unexpectedly strong static crustal magnetic field of $\sim\SI{2013}{\nano\tesla}$ \citep{Johnson2020}, demonstrating that local shallow magnetized basement bodies can amplify ground-level fields by an order of magnitude above orbital predictions. In the southern highlands, candidate scientific outposts located within the Terra Sirenum magnetic anomaly belt ($\SI{30.00}{\degree}\text{S}$, $\SI{195.00}{\degree}\text{E}$) exhibit orbital fields of $\sim\SI{215}{\nano\tesla}$ and surface fields exceeding \SI{1800}{\nano\tesla}, generating substantial localized mini-magnetospheres (Figure~\ref{fig:mars_sites_comparison}).
+
+\subsection{Systematic Biological Literature Synthesis}
+Our systematic review of terrestrial magnetobiology literature (Table~\ref{tab:mars_biology_review}, Figure~\ref{fig:mars_biology_matrix}) documents consistent physiological disruptions across taxonomic groups exposed to hypomagnetic field conditions ($< \SI{5}{\micro\tesla}$):
+
+\begin{enumerate}
+    \item \textbf{Plant Growth and Morphogenesis:} In \textit{Arabidopsis thaliana}, near-null magnetic fields ($< \SI{1}{\micro\tesla}$) induce significant delays in flowering time via down-regulation of cryptochrome (CRY1/CRY2) and phytochrome-mediated photoperiodic signaling \citep{Agliassa2018}. Furthermore, HMF conditions disrupt root gravitropic curvature and meristem cell elongation through the redistribution of the PIN2 polar auxin efflux carrier \citep{Narayana2018}, perturb iron uptake transcription factors (FIT and IRT1) \citep{Narayana2021}, and elevate reactive oxygen species (ROS) production \citep{Maffei2014, Belyavskaya2004}.
+    \item \textbf{Microbial Ecology and Magnetotaxis:} Bacterial cultures subjected to HMFs display shifts in cell division kinetics and membrane potential \citep{Creanga2009}, altered gut microbiome community diversity in mammalian models \citep{Zhang2017}, and complete loss of directional motility in magnetotactic bacteria \citep{Frankel1981}.
+    \item \textbf{Mammalian Cellular and Bone Physiology:} In invertebrate models (\textit{Drosophila}, \textit{C. elegans}), HMF exposure extends circadian clock periods via radical pair spin-state modulation \citep{Yoshii2009} and induces embryonic developmental delays \citep{Vitas2015, VidalGadea2015}. In mammalian models, hypomagnetic conditions act synergistically with mechanical unloading to accelerate trabecular bone loss, suppress osteoblast mineralization, and elevate osteoclast resorption \citep{Xu2012, Mo2014}, alongside transcriptomic remodeling of cell cycle control genes \citep{Mo2012, Gurfinkel2014, Binhi2017}.
+\end{enumerate}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../figures/fig5_mars_biology_matrix.pdf}
+\caption{\textbf{Biological vulnerability matrix under Martian environmental and magnetic regimes.} Synthesis of empirical evidence across key physiological endpoints under hypomagnetic, radiation, and hypogravity stressors.}
+\label{fig:mars_biology_matrix}
+\end{figure}
+
+\input{../tables/table2_mars_biology_literature.tex}
+
+\subsection{Martian Biological Risk Assessment Matrix}
+Synthesizing physical field determinations with documented biological sensitivity thresholds yields the risk assessment matrix in Table~\ref{tab:mars_risk_matrix}.
+
+\input{../tables/table3_mars_risk_matrix.tex}
