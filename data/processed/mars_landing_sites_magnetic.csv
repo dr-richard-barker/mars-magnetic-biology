@@ -1,14 +1,14 @@
 name,lat,lon,mission,Bmag_400km,Br,Btheta,Bphi,B_surface_est,classification,geological_setting,source
-Perseverance (Jezero Crater),18.38,77.58,NASA Mars 2020,2.71,-1.46,-0.28,0.29,23.0,low/null-field,Delta / Demagnetized Isidis Basin Rim,Langlais et al. (2019) MAVEN/MGS Model
-Curiosity (Gale Crater),-4.59,137.44,NASA MSL,3.18,-0.07,1.63,-0.87,27.0,low/null-field,Crater Interior / Dichotomy Boundary,Langlais et al. (2019) MAVEN/MGS Model
-InSight (Elysium Planitia),4.5,135.62,NASA Discovery,1.99,0.83,-0.09,-0.63,2013.0,high-field,Smooth Volcanic Plain (Magnetometer Ground Truth),Langlais et al. (2019) MAVEN/MGS Model
-Opportunity (Meridiani Planum),-1.95,354.47,NASA MER-B,2.54,1.1,1.43,-1.43,21.6,low/null-field,Hematite Plains / Low Crustal Field,Langlais et al. (2019) MAVEN/MGS Model
-Spirit (Gusev Crater),-14.57,175.47,NASA MER-A,9.09,-7.56,2.91,2.98,77.3,low/null-field,Impact Crater / Moderate Anomaly Margin,Langlais et al. (2019) MAVEN/MGS Model
-Phoenix (Vastitas Borealis),68.22,234.25,NASA Scout,0.48,0.05,-0.26,0.13,4.1,low/null-field,Northern Polar Plains / Demagnetized Ice Sheet,Langlais et al. (2019) MAVEN/MGS Model
-Viking 1 (Chryse Planitia),22.48,312.05,NASA Viking,0.59,-0.0,0.07,0.18,5.0,low/null-field,Outflow Channel Basin / Weak Field,Langlais et al. (2019) MAVEN/MGS Model
-Viking 2 (Utopia Planitia),47.97,134.28,NASA Viking,0.39,-0.01,-0.18,-0.29,3.3,low/null-field,Demagnetized Impact Basin Lowlands,Langlais et al. (2019) MAVEN/MGS Model
-Zhurong (Utopia Planitia),25.07,109.93,CNSA Tianwen-1,0.76,-0.22,-0.27,-0.57,6.5,low/null-field,Southern Utopia / Sedimentary Plain,Langlais et al. (2019) MAVEN/MGS Model
-ExoMars (Oxia Planum),18.28,335.37,ESA/Rosalind Franklin,1.82,0.19,-0.53,0.65,15.5,low/null-field,Clay-Rich Lowland Plain,Langlais et al. (2019) MAVEN/MGS Model
+Perseverance (Jezero Crater),18.445,77.451,NASA Mars 2020,2.75,-1.42,-0.09,0.74,23.4,low/null-field,Octavia E. Butler Landing / Delta Fan,Langlais et al. (2019) MAVEN/MGS Model
+Curiosity (Gale Crater),-4.589,137.442,NASA MSL,3.18,-0.07,1.63,-0.87,27.0,low/null-field,Bradbury Landing / Crater Interior,Langlais et al. (2019) MAVEN/MGS Model
+InSight (Elysium Planitia),4.502,135.623,NASA Discovery,1.99,0.84,-0.09,-0.63,2013.0,high-field,Smooth Volcanic Plain (IFG Ground Truth),Langlais et al. (2019) MAVEN/MGS Model
+Opportunity (Meridiani Planum),-1.946,354.473,NASA MER-B,2.55,1.1,1.43,-1.43,21.6,low/null-field,Challenger Memorial Station / Hematite Plain,Langlais et al. (2019) MAVEN/MGS Model
+Spirit (Gusev Crater),-14.568,175.473,NASA MER-A,9.08,-7.56,2.9,2.97,77.2,low/null-field,Columbia Memorial Station / Anomaly Margin,Langlais et al. (2019) MAVEN/MGS Model
+Phoenix (Vastitas Borealis),68.219,234.251,NASA Scout,0.48,0.05,-0.26,0.13,4.1,low/null-field,Green Valley / Polar Subsurface Ice Sheet,Langlais et al. (2019) MAVEN/MGS Model
+Viking 1 (Chryse Planitia),22.48,312.05,NASA Viking,0.59,-0.0,0.07,0.18,5.0,low/null-field,Thomas Mutch Memorial Station / Outflow Plain,Langlais et al. (2019) MAVEN/MGS Model
+Viking 2 (Utopia Planitia),47.967,134.28,NASA Viking,0.39,-0.01,-0.18,-0.29,3.3,low/null-field,Demagnetized Impact Lowland Plain,Langlais et al. (2019) MAVEN/MGS Model
+Zhurong (Utopia Planitia),25.066,109.925,CNSA Tianwen-1,0.76,-0.22,-0.26,-0.57,6.5,low/null-field,Southern Utopia Sedimentary Basin,Langlais et al. (2019) MAVEN/MGS Model
+ExoMars (Oxia Planum),18.275,335.368,ESA/Rosalind Franklin,1.82,0.2,-0.54,0.65,15.5,low/null-field,Clay-Rich Lowland Lacustrine Plain,Langlais et al. (2019) MAVEN/MGS Model
 Arcadia Planitia (Candidate),39.3,189.7,Human Exploration,0.71,-0.29,0.39,0.14,6.0,low/null-field,Shallow Subsurface Glacial Ice Candidate,Langlais et al. (2019) MAVEN/MGS Model
-Deuteronilus Mensae (Candidate),39.1,23.2,Human Exploration,0.7,0.1,-0.41,-0.35,5.9,low/null-field,Lobate Debris Aprons / Ice-Rich Glacial Slopes,Langlais et al. (2019) MAVEN/MGS Model
-Terra Sirenum Anomaly (Science),-30.0,195.0,Human Outpost,140.07,110.78,85.7,1.94,1190.6,high-field,Intense Crustal Magnetic Anomaly / Mini-Magnetosphere,Langlais et al. (2019) MAVEN/MGS Model
+Deuteronilus Mensae (Candidate),39.1,23.2,Human Exploration,0.7,0.1,-0.41,-0.35,5.9,low/null-field,Lobate Debris Aprons / Glacial Slopes,Langlais et al. (2019) MAVEN/MGS Model
+Terra Sirenum Anomaly (Science),-30.0,195.0,Human Outpost,140.07,110.78,85.7,1.94,1190.6,high-field,Intense Crustal Magnetic Lineation / Mini-Magnetosphere,Langlais et al. (2019) MAVEN/MGS Model

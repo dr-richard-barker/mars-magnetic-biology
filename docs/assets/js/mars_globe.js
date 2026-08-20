@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Coordinate Conversion
     function latLonToVector3(lat, lon, radius) {
         const phi = (90 - lat) * (Math.PI / 180);
-        const theta = (lon + 180) * (Math.PI / 180);
+        const theta = lon * (Math.PI / 180);
 
         const x = -(radius * Math.sin(phi) * Math.cos(theta));
         const z = (radius * Math.sin(phi) * Math.sin(theta));

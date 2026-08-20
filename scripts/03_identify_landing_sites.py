@@ -7,8 +7,8 @@ local crustal magnetic field values (orbital at 400 km and surface estimates)
 via bilinear interpolation.
 
 Classifies each site from an astrobiology, space physiology, and habitat perspective:
-- High-Field: |B| > 100 nT (at 400 km) or surface > 1000 nT (partial plasma shielding)
-- Moderate: 20 nT <= |B| <= 100 nT
+- High-Field: |B| > 80 nT (at 400 km) or surface > 800 nT (partial plasma shielding)
+- Moderate: 20 nT <= |B| <= 80 nT
 - Low/Null-Field: |B| < 20 nT (severe hypomagnetic environment relative to Earth's 50,000 nT)
 
 Output: data/processed/mars_landing_sites_magnetic.csv
@@ -29,41 +29,41 @@ PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 GRID_FILE = PROCESSED_DIR / "mars_mag_field_grid.csv"
 OUTPUT_FILE = PROCESSED_DIR / "mars_landing_sites_magnetic.csv"
 
-# Comprehensive Mars Landing Sites Database
+# Comprehensive Mars Landing Sites Database with High-Precision Surface Telemetry
 MARS_LANDING_SITES = [
     # Contemporary NASA Surface Assets
-    {"name": "Perseverance (Jezero Crater)", "lat": 18.38, "lon": 77.58, "mission": "NASA Mars 2020",
-     "surface_measured_nt": None, "geological_setting": "Delta / Demagnetized Isidis Basin Rim"},
-    {"name": "Curiosity (Gale Crater)", "lat": -4.59, "lon": 137.44, "mission": "NASA MSL",
-     "surface_measured_nt": None, "geological_setting": "Crater Interior / Dichotomy Boundary"},
-    {"name": "InSight (Elysium Planitia)", "lat": 4.50, "lon": 135.62, "mission": "NASA Discovery",
-     "surface_measured_nt": 2013.0, "geological_setting": "Smooth Volcanic Plain (Magnetometer Ground Truth)"},
+    {"name": "Perseverance (Jezero Crater)", "lat": 18.445, "lon": 77.451, "mission": "NASA Mars 2020",
+     "surface_measured_nt": None, "geological_setting": "Octavia E. Butler Landing / Delta Fan"},
+    {"name": "Curiosity (Gale Crater)", "lat": -4.589, "lon": 137.442, "mission": "NASA MSL",
+     "surface_measured_nt": None, "geological_setting": "Bradbury Landing / Crater Interior"},
+    {"name": "InSight (Elysium Planitia)", "lat": 4.502, "lon": 135.623, "mission": "NASA Discovery",
+     "surface_measured_nt": 2013.0, "geological_setting": "Smooth Volcanic Plain (IFG Ground Truth)"},
     
     # Historical NASA Rovers & Landers
-    {"name": "Opportunity (Meridiani Planum)", "lat": -1.95, "lon": 354.47, "mission": "NASA MER-B",
-     "surface_measured_nt": None, "geological_setting": "Hematite Plains / Low Crustal Field"},
-    {"name": "Spirit (Gusev Crater)", "lat": -14.57, "lon": 175.47, "mission": "NASA MER-A",
-     "surface_measured_nt": None, "geological_setting": "Impact Crater / Moderate Anomaly Margin"},
-    {"name": "Phoenix (Vastitas Borealis)", "lat": 68.22, "lon": 234.25, "mission": "NASA Scout",
-     "surface_measured_nt": None, "geological_setting": "Northern Polar Plains / Demagnetized Ice Sheet"},
-    {"name": "Viking 1 (Chryse Planitia)", "lat": 22.48, "lon": 312.05, "mission": "NASA Viking",
-     "surface_measured_nt": None, "geological_setting": "Outflow Channel Basin / Weak Field"},
-    {"name": "Viking 2 (Utopia Planitia)", "lat": 47.97, "lon": 134.28, "mission": "NASA Viking",
-     "surface_measured_nt": None, "geological_setting": "Demagnetized Impact Basin Lowlands"},
+    {"name": "Opportunity (Meridiani Planum)", "lat": -1.946, "lon": 354.473, "mission": "NASA MER-B",
+     "surface_measured_nt": None, "geological_setting": "Challenger Memorial Station / Hematite Plain"},
+    {"name": "Spirit (Gusev Crater)", "lat": -14.568, "lon": 175.473, "mission": "NASA MER-A",
+     "surface_measured_nt": None, "geological_setting": "Columbia Memorial Station / Anomaly Margin"},
+    {"name": "Phoenix (Vastitas Borealis)", "lat": 68.219, "lon": 234.251, "mission": "NASA Scout",
+     "surface_measured_nt": None, "geological_setting": "Green Valley / Polar Subsurface Ice Sheet"},
+    {"name": "Viking 1 (Chryse Planitia)", "lat": 22.480, "lon": 312.050, "mission": "NASA Viking",
+     "surface_measured_nt": None, "geological_setting": "Thomas Mutch Memorial Station / Outflow Plain"},
+    {"name": "Viking 2 (Utopia Planitia)", "lat": 47.967, "lon": 134.280, "mission": "NASA Viking",
+     "surface_measured_nt": None, "geological_setting": "Demagnetized Impact Lowland Plain"},
      
     # International Surface Missions
-    {"name": "Zhurong (Utopia Planitia)", "lat": 25.07, "lon": 109.93, "mission": "CNSA Tianwen-1",
-     "surface_measured_nt": None, "geological_setting": "Southern Utopia / Sedimentary Plain"},
-    {"name": "ExoMars (Oxia Planum)", "lat": 18.28, "lon": 335.37, "mission": "ESA/Rosalind Franklin",
-     "surface_measured_nt": None, "geological_setting": "Clay-Rich Lowland Plain"},
+    {"name": "Zhurong (Utopia Planitia)", "lat": 25.066, "lon": 109.925, "mission": "CNSA Tianwen-1",
+     "surface_measured_nt": None, "geological_setting": "Southern Utopia Sedimentary Basin"},
+    {"name": "ExoMars (Oxia Planum)", "lat": 18.275, "lon": 335.368, "mission": "ESA/Rosalind Franklin",
+     "surface_measured_nt": None, "geological_setting": "Clay-Rich Lowland Lacustrine Plain"},
      
-    # Human Mission Candidate Landing Sites
-    {"name": "Arcadia Planitia (Candidate)", "lat": 39.30, "lon": 189.70, "mission": "Human Exploration",
+    # Candidate Human Exploration & Scientific Outpost Sites
+    {"name": "Arcadia Planitia (Candidate)", "lat": 39.300, "lon": 189.700, "mission": "Human Exploration",
      "surface_measured_nt": None, "geological_setting": "Shallow Subsurface Glacial Ice Candidate"},
-    {"name": "Deuteronilus Mensae (Candidate)", "lat": 39.10, "lon": 23.20, "mission": "Human Exploration",
-     "surface_measured_nt": None, "geological_setting": "Lobate Debris Aprons / Ice-Rich Glacial Slopes"},
-    {"name": "Terra Sirenum Anomaly (Science)", "lat": -30.00, "lon": 195.00, "mission": "Human Outpost",
-     "surface_measured_nt": None, "geological_setting": "Intense Crustal Magnetic Anomaly / Mini-Magnetosphere"}
+    {"name": "Deuteronilus Mensae (Candidate)", "lat": 39.100, "lon": 23.200, "mission": "Human Exploration",
+     "surface_measured_nt": None, "geological_setting": "Lobate Debris Aprons / Glacial Slopes"},
+    {"name": "Terra Sirenum Anomaly (Science)", "lat": -30.000, "lon": 195.000, "mission": "Human Outpost",
+     "surface_measured_nt": None, "geological_setting": "Intense Crustal Magnetic Lineation / Mini-Magnetosphere"}
 ]
 
 def classify_martian_field(bmag_400km, bmag_surface):
