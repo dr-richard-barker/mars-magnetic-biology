@@ -423,3 +423,71 @@ pre#bibtex-code {
         height: 450px;
     }
 }
+
+/* ---- CoSE dark-mode overrides ---- */
+html[data-theme="dark"] {
+    --primary-color: #ef8a8a;
+    --primary-dark: #f5b7b7;
+    --primary-light: #f09070;
+    --secondary-color: #1e293b;
+    --accent-color: #f09070;
+    --bg-light: #0f172a;
+    --card-bg: #1e293b;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+}
+
+html[data-theme="dark"] .site-header {
+    background-color: #0f172a;
+    border-bottom-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .nav-link {
+    color: #cbd5e1;
+}
+
+html[data-theme="dark"] th {
+    background-color: #1e293b;
+    color: var(--accent-color);
+}
+
+html[data-theme="dark"] tr:hover {
+    background-color: #0f172a;
+}
+
+html[data-theme="dark"] .hero {
+    background: linear-gradient(135deg, #0f172a, var(--primary-dark));
+}
+
+html[data-theme="dark"] .publication-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+html[data-theme="dark"] pre#bibtex-code {
+    background-color: #0f172a;
+}
+
+html[data-theme="dark"] .site-footer {
+    background-color: #020617;
+}
+
+html[data-theme="dark"] .badge-high {
+    background-color: #450a0a;
+    color: #fca5a5;
+}
+
+html[data-theme="dark"] .badge-moderate {
+    background-color: #451a03;
+    color: #fcd34d;
+}
+
+html[data-theme="dark"] .badge-low {
+    background-color: #0c4a6e;
+    color: #7dd3fc;
+}
+
+html[data-theme="dark"] #globe-container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
