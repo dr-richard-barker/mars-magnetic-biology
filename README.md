@@ -97,15 +97,12 @@ make validate   # Validates FAIR compliance (.zenodo.json, CITATION.cff, YAML)
 ## How to Cite
 
 ```bibtex
-@article{barker2026mars,
+@unpublished{barker2026mars,
   title={Martian Crustal Magnetic Field Heterogeneity and Implications for Biological Systems at Candidate Landing Sites},
   author={Barker, Richard and Sanchez, Adriana Kaley and Dagar, Manisha and Boland, Katrina and Borlina, Cau{\^e} Sciascia and Porterfield, D. Marshall},
-  journal={npj Microgravity},
   year={2026},
-  volume={12},
-  pages={46},
-  doi={10.1038/s41526-026-00452-y},
-  url={https://github.com/dr-richard-barker/mars-magnetic-biology}
+  url={https://github.com/dr-richard-barker/mars-magnetic-biology},
+  note={Manuscript in preparation; target journal: npj Microgravity. Not yet published --- no DOI, volume or page numbers have been assigned.}
 }
 ```
 
